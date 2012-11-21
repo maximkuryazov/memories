@@ -75,7 +75,7 @@
 					} 
 					elseif ( $destination[0] == "memory" ) {
 						switch ( $destination[1] ) {
-							case"edit_memory":
+							case "edit_memory":
 								echo json_encode( Memory::edit($_POST["title"], $_POST["bookmark"]) );
 							break;
 						}
