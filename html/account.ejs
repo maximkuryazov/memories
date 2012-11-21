@@ -1,0 +1,39 @@
+<button id="exit">Выход</button>
+<table width="100%">
+	<tr valign="top">
+		<td class="create_bookmark" align="left">
+			<b>Новая закладка</b><p />
+			<span id="new_bookmark_message"></span><br />
+			<form id="new_memory" name="new_memory" action="core.php" method="POST">
+				Название:<br /> <input type="text" name="title" /> <br />
+				Ссылка:<br /> <input type="text" name="bookmark" /> <p />
+				<input type="submit" value="Создать" id="new_bookmark" />
+			</form>
+		</td>
+		<td align="left" id="bookmarks">
+			<% if ( memories.length == 0 ) { %>
+				<span id="no_bookmarks">Пока нету закладок.</span>
+			<% } %>
+			<!-- bookmark tempate -->
+			<div class="bookmark" id="" style="display:none;">
+				<div class="title"></div>
+				<div class="link">
+					<a href="" target="_blank"></a>
+				</div>
+				<span class="edit">Редактировать</span>
+				<span class="remove">Удалить</span>
+			</div>
+			<!-- bookmarks list -->
+			<% for ( var i = 0; i < memories.length; i++ ) { %>
+				<div class="bookmark" id="<%= memories[i].ID %>">
+					<div class="title"><%= memories[i].title %></div>
+					<div class="link">
+						<a href="<%= memories[i].bookmark %>" target="_blank"><%= memories[i].bookmark %></a>
+					</div>
+					<span class="edit">Редактировать</span>
+					<span class="remove">Удалить</span>
+				</div>
+			<% } %>
+		</td>
+	</tr>
+</table>

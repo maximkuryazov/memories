@@ -1,0 +1,64 @@
+#authorization-div {
+	margin-top: 10%;
+}
+
+#registration-div {
+	margin-top: 8%;
+	display: none;
+}
+
+input[type="submit"] {
+	padding: 6px;
+	font: bold 13px Verdana;
+	min-width: 80px;
+}
+
+#autho-error-message, #reg-error-message, #new_bookmark_message {
+	color: red;
+}
+
+.create_bookmark {
+	padding-left: 20%;
+	width: 45%;
+}
+
+.bookmark {
+	margin-top: 5px;
+	border: 1px dotted #000;
+	width: 50%;
+	padding: 10px;
+}
+
+.title {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#bookmarks {
+	overflow-y: scroll;
+}
+
+#exit {
+	float: right;
+	position: relative;
+	top: -50px;
+	margin-right: 100px;
+}
+
+#new_memory {
+	overflow: hidden;
+}
+
+.edit, .remove {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: grey;
+	display: inline-block;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.edit:hover, .remove:hover {
+	text-decoration: none;
+}
