@@ -44,5 +44,5 @@
 		}
 		private $DB;
 	}
-	$DB = new DB_Connect("db01.hostline.ru", "vh43058_Maxman", "3225386", "vh43058_syntax");
+	$DB = new DB_Connect("db01.hostline.ru", "login", "password", "vh43058_syntax");
 ?>
