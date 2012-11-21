@@ -25,7 +25,7 @@ require(["helper/jquery.min"], function() {
 					document.getElementById("exit").onclick = currentUser.logout;
 				});
 			}
-        });
+        	});
 		
 		/* registration */
 		
@@ -41,7 +41,7 @@ require(["helper/jquery.min"], function() {
 						$authorization.fadeIn();
 					}, 1500);
 				}
-	       	});
+	       		});
 		});
 			
 		$("#registration-link").live("click", function() {
